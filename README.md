@@ -2,7 +2,7 @@
 
 <h2>Demo: https://hangry101.github.io/Speech-Recognition-and-Synthesis-Example/</h2>
 
-![speech](https://github.com/HAngry101/Speech-Recognition-and-Synthesis-Example/assets/168013853/2a7ac54c-d8b7-4afc-814c-3225e68bb62e)
+[speech.webm](https://github.com/HAngry101/Speech-Recognition-and-Synthesis-Example/assets/168013853/6b53e6de-d508-4fc0-9030-e76f7676f603)
 
 
 This project demonstrates an example of using text and speech recognition technologies on a website using JavaScript. The project includes a simple example that allows you to add text recognition functionality to your website, as well as speech synthesis using "Speech Recognition" and "Speech Synthesis" interfaces.
