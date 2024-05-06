@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech Recognition and Synthesis Example</title>
+</head>
+<body>
+    <h1>Speech Recognition and Synthesis Example</h1>
+
+    <!-- Кнопка для запуска распознавания речи -->
+    <button id="startRecognition">Начать распознавание речи</button>
+
+    <!-- Кнопка для проговаривания текста -->
+    <button id="speakButton">Проговорить</button>
+
+    <!-- Строка для вывода результатов распознавания речи -->
+    <p id="recognitionResult"></p>
+
+    <script>
+        // Проверка поддержки API распознавания речи и синтеза речи в браузере
+        if ('webkitSpeechRecognition' in window && 'speechSynthesis' in window) {
+            // Создание объекта распознавания речи
+            const recognition = new webkitSpeechRecognition();
+            recognition.lang = 'ru-RU'; // Установка языка распознавания
+
+            // Обработка результатов распознавания речи
+            recognition.onresult = function(event) {
+                const result = event.results[0][0].transcript; // Получение текста распознанной речи
+                document.getElementById('recognitionResult').textContent = 'Результат распознавания: ' + result; // Вывод текста на странице
+            };
+
+            // Обработка ошибок распознавания речи
+            recognition.onerror = function(event) {
+                console.error('Ошибка распознавания речи:', event.error);
+            };
+
+            // Обработка щелчка по кнопке "Начать распознавание речи"
+            document.getElementById('startRecognition').addEventListener('click', function() {
+                recognition.start(); // Запуск распознавания речи
+            });
+
+            // Обработка щелчка по кнопке "Проговорить"
+            document.getElementById('speakButton').addEventListener('click', function() {
+                const synth = window.speechSynthesis; // Создание объекта синтеза речи
+                const utterance = new SpeechSynthesisUtterance('Привет, мир!'); // Создание объекта синтеза речи с текстом
+                synth.speak(utterance); // Проговаривание текста
+            });
+        } else {
+            // Если API не поддерживается, выводим сообщение об ошибке
+            alert('Извините, ваш браузер не поддерживает распознавание речи или синтез речи.');
+        }
+    </script>
+</body>
+</html>
