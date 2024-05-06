@@ -1,4 +1,6 @@
-Project "Adding Text and Speech Recognition to Website" 🗣️📝
+<h2>Project "Adding Text and Speech Recognition to Website" 🗣️📝</h2>
+
+<h2>Demo: https://hangry101.github.io/Speech-Recognition-and-Synthesis-Example/</h2>
 
 This project demonstrates an example of using text and speech recognition technologies on a website using JavaScript. The project includes a simple example that allows you to add text recognition functionality to your website, as well as speech synthesis using "Speech Recognition" and "Speech Synthesis" interfaces.
 
@@ -23,7 +25,9 @@ Attention:
 
 -----
 
-Проект "Добавление распознавания текста и речи на сайт" 🗣️📝
+<h2>Проект "Добавление распознавания текста и речи на сайт" 🗣️📝</h2>
+
+<h2>Demo: https://hangry101.github.io/Speech-Recognition-and-Synthesis-Example/</h2>
 
 Этот проект демонстрирует пример использования технологий распознавания текста и речи на веб-сайте с использованием JavaScript. Проект включает в себя простой пример, который позволяет добавить на ваш веб-сайт функциональность распознавания текста, а также синтез речи с использованием интерфейсов "Проба" (Speech Recognition) и "Спич Синтезис" (Speech Synthesis).
 
