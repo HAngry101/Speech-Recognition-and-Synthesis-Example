@@ -11,9 +11,6 @@
     <!-- Кнопка для запуска распознавания речи -->
     <button id="startRecognition">Начать распознавание речи</button>
 
-    <!-- Кнопка для проговаривания текста -->
-    <button id="speakButton">Проговорить</button>
-
     <!-- Строка для вывода результатов распознавания речи -->
     <p id="recognitionResult"></p>
 
@@ -40,12 +37,7 @@
                 recognition.start(); // Запуск распознавания речи
             });
 
-            // Обработка щелчка по кнопке "Проговорить"
-            document.getElementById('speakButton').addEventListener('click', function() {
-                const synth = window.speechSynthesis; // Создание объекта синтеза речи
-                const utterance = new SpeechSynthesisUtterance('Привет, мир!'); // Создание объекта синтеза речи с текстом
-                synth.speak(utterance); // Проговаривание текста
-            });
+            
         } else {
             // Если API не поддерживается, выводим сообщение об ошибке
             alert('Извините, ваш браузер не поддерживает распознавание речи или синтез речи.');
